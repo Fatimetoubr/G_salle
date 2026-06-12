@@ -1,0 +1,26 @@
+# ===== Backend (Spring Boot / Maven) =====
+supsalle-backend/target/
+*.class
+*.jar
+*.war
+*.log
+
+# ===== Flutter / Dart =====
+supsalle_flutter2/build/
+supsalle_flutter2/.dart_tool/
+supsalle_flutter2/.flutter-plugins
+supsalle_flutter2/.flutter-plugins-dependencies
+supsalle_flutter2/.pub-cache/
+supsalle_flutter2/.pub/
+supsalle_flutter2/coverage/
+
+# ===== IDE =====
+.idea/
+*.iml
+*.ipr
+*.iws
+.vscode/
+
+# ===== OS =====
+.DS_Store
+Thumbs.db
