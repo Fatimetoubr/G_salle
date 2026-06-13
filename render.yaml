@@ -1,0 +1,20 @@
+services:
+  - type: web
+    name: supsalle-backend
+    runtime: docker
+    rootDir: supsalle-backend
+    dockerfilePath: ./Dockerfile
+    plan: free
+    region: frankfurt
+    healthCheckPath: /
+    envVars:
+      # Base de donnees MySQL (Aiven) — a renseigner dans le dashboard Render
+      - key: SPRING_DATASOURCE_URL
+        sync: false
+      - key: SPRING_DATASOURCE_USERNAME
+        sync: false
+      - key: SPRING_DATASOURCE_PASSWORD
+        sync: false
+      # Secret JWT — genere automatiquement
+      - key: JWT_SECRET
+        generateValue: true
